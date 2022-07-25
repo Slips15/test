@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Июл 15 2022 г., 19:46
+-- Время создания: Июл 25 2022 г., 19:16
 -- Версия сервера: 10.3.22-MariaDB
 -- Версия PHP: 7.1.33
 
@@ -40,7 +40,11 @@ CREATE TABLE `info` (
 --
 
 INSERT INTO `info` (`id`, `name`, `surname`, `patronymic`, `age`) VALUES
-(1, 'Алеша', 'Мэр', 'Артемовна', 14);
+(1, 'Алеша', 'Мэр', 'Артемовна', 14),
+(2, 'Обрагим', 'Зверев', 'Олегович', 54),
+(3, 'Азу', 'Аль-Рашид', 'Имам', 77),
+(4, 'Алеша', 'Мэр', 'Артемовна', 16),
+(5, 'Наталья', 'Мэр', 'FJF', 77);
 
 --
 -- Индексы сохранённых таблиц
@@ -60,7 +64,7 @@ ALTER TABLE `info`
 -- AUTO_INCREMENT для таблицы `info`
 --
 ALTER TABLE `info`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
