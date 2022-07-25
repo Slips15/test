@@ -1,40 +1,49 @@
 <!DOCTYPE html> 
 <html> 
     <head> 
-        <title>TODO supply a title</title> 
+        <title>Ввод данных</title> 
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link href="style.css" rel="stylesheet" type="text/css"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     </head> 
     <body> 
-        
+
 
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-sm-6 " style="position: relative;	box-shadow: 0px 0px 5px 2px #436280;">
+                <div class="col-sm-7" style="position: relative;	box-shadow: 0px 0px 5px 2px #436280;">
+                    
+                    <div class="row inp">
+                        <form action="index.php" class="col-sm-6"><input type="submit" class="col-sm-12" value="Ввод данных"></form>
+                        <form action="second_page.php" class="col-sm-6"><input type="submit" class="col-sm-12" value="Просмотр таблицы"></form>
+                    </div>
+                    
+                    <hr>
+                    
                     <h1 class="d-flex justify-content-center">Введите данные</h1>
 
-                    <form action="script.php" method="post">
+                    <form action="script.php" class="main_form" method="post">
 
-                        <div class="form-floating" style="margin: 5px 0 5px 0">
+                        <div class="form-floating">
                             <input name="name" class="form-control" id="name" placeholder="Ваше имя" required>
                             <label for="floatingInput">Ваше имя</label>
                         </div>
-                        <div class="form-floating" style="margin: 5px 0 5px 0">
+                        <div class="form-floating">
                             <input name="surname" class="form-control" id="surname" placeholder="Ваша фамилия" required>
                             <label for="floatingInput">Ваша фамилия</label>
                         </div>
-                        <div class="form-floating" style="margin: 5px 0 5px 0">
+                        <div class="form-floating">
                             <input name="patronymic" class="form-control" id="floatingInput" placeholder="Ваше Отчество" required>
                             <label for="floatingInput">Ваше Отчество</label>
                         </div>
-                        <div class="form-floating" style="margin: 5px 0 5px 0">
+                        <div class="form-floating">
                             <input name="age" class="form-control" id="floatingInput" placeholder="Ваш возраст" required>
                             <label for="floatingInput">Ваш возраст</label>
                         </div>
-                        
-                        <button type="submit" > Ввести</button>
+
+                        <input type="submit" class="col-sm-5 d-flex justify-content-center" value="Ввести">
                     </form>
 
                 </div>
